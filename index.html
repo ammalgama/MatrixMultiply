@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="side-panel">
+		<div class="arrow">Умножить матрицы</div>
+		<div id="clear_matrix" class="button">&#9986 Очистить матрицы</div>
+		<div id="change_place" class="button">&#8644 Поменять матрицы местами</div>
+		<form method="post">
+			<input type="radio" id="matrix_1" name="matrix" value="0" checked>   <label for="matrix_1">Матрица А</label>
+  		    <input type="radio" id="matrix_2" name="matrix" value="1"><label for="matrix_2"> Матрица B</label>
+  		</form>    
+		<div class="button row row_add">&#10750 Добавить</div>
+		<div class="button row row_minus">&#10751 Удалить</div> <div class="note">строку</div>
+		<div class="button col col_add">&#10750 Добавить</div>
+		<div class="button col col_minus">&#10751 Удалить</div> <div class="note">столбец</div>
+		<div id="warning">Такие матрицы нельзя перемножить, так как количество столбцов матрицы А не равно количеству строк матрицы В.</div>
+	</div>
+	<div class="main_part">
+		<div class="table_cell"><div id="first_matrix"></div></div>
+		<div class="table_cell"><div id="multiple"></div></div>
+		<div class="table_cell"><div id="second_matrix"></div></div>
+		<h3>Ответ:</h3>
+		<div id="res_matrix"></div>	
+	</div>	 
+	<script src="script.js"></script>
+</body>
+</html>
