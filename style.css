@@ -371,3 +371,9 @@ input {
 #res_matrix {
 	padding-top: 30px;
 }
+
+.landmark {
+	position: fixed;
+	bottom: 5px;
+	right:5px;
+}
